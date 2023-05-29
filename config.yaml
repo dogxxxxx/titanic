@@ -1,0 +1,46 @@
+# Initial Settings
+train_path: ./data/train.csv
+test_path: ./data/test.csv
+log_path: ./logging.txt
+label_col: Survived
+useless_cols: ['PassengerId', 'Ticket']
+nominal_cols: ['Pclass', 'Embarked']
+binary_cols: ['Sex']
+test_ratio: 0.2
+bagging_submit_path: submission/bagging.csv
+
+# DNN Training Parameters
+epoch: 1000
+learning_rate: 0.0001
+hidden_dim: [128, 64, 16]
+batch_size: 32
+patience: 100
+DNN_submit_path: submission/DNN.csv
+DNN_model_save_path: model_weights/DNN.pt
+
+# Random Forest Parameters
+n_estimators: [100, 200, 300]
+max_depth: [3, 6, 9]
+min_samples_split: [2, 5, 8]
+rf_submit_path: submission/random_forest.csv
+rf_model_save_path: model_weights/random_forest.joblib
+
+# XGBoost parameters
+objective: 'binary:logistic'
+xgb_model_save_path: model_weights/xgboost.joblib
+xgb_submit_path: submission/xgboost.csv
+xgb_params:
+  learning_rate: [0.0001, 1.0, 'log-uniform']
+  min_child_weight: [0, 10]
+  max_depth: [3, 10]
+  subsample: [0.01, 1.0, 'uniform']
+  colsample_bytree: [0.01, 1.0, 'uniform']
+  colsample_bylevel: [0.01, 1.0, 'uniform']
+  reg_lambda: [0.00001, 0.1, 'log-uniform']
+  reg_alpha: [0.00001, 0.1, 'log-uniform']
+  gamma: [0.00001, 0.5, 'log-uniform']
+  min_child_weight: [0, 5]
+  n_estimators: [50, 100]
+
+# Visualization Settings
+plot_save_directory: ./figures/

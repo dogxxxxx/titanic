@@ -1,0 +1,14 @@
+2023/05/22 11:21:56 root INFO ----------DNN training start----------
+2023/05/22 11:21:59 root INFO Epoch 100: train_loss=0.4255, train_accuracy=0.8132, val_loss=0.4248, val_accuracy=0.8268
+2023/05/22 11:22:02 root INFO Epoch 200: train_loss=0.4105, train_accuracy=0.8132, val_loss=0.4316, val_accuracy=0.8212
+2023/05/22 11:22:04 root INFO Early stopping after 263 epochs, best_val_loss=0.4170469293991725, val_accuracy=0.8268156424581006
+2023/05/22 11:22:04 root INFO DNN training time: 7.842813730239868
+2023/05/22 11:22:04 root INFO ----------DNN training end----------
+2023/05/22 11:22:07 root INFO ----------Random Forest training start----------
+2023/05/22 11:22:51 root INFO train_accuracy = 0.9309772759506437, val_accuracy = 0.8282970309459545
+2023/05/22 11:22:51 root INFO Random Forest training time: 43.830994844436646
+2023/05/22 11:22:51 root INFO ----------Random Forest training end----------
+2023/05/22 11:22:51 root INFO ----------XGBoost training start----------
+2023/05/22 11:28:34 root INFO train_accuracy = 0.9029173298454071, val_accuracy = 0.8440148138848785
+2023/05/22 11:28:34 root INFO XGBoost training time: 343.50120067596436
+2023/05/22 11:28:34 root INFO ----------XGBoost training end----------
